@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testorioso",
+	"version": "${version}",
+	"name": "Testorioso",
+	"description": "About the Shardor Mern, for the Shardor Mern!",
+	"authors": [
+		"Le Mangeur De Ciment |:-¬}"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/testorioso/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shardor_marn.testorioso.Testorioso"
+		],
+		"fabric-datagen": [
+			"net.shardor_marn.testorioso.TestoriosoDataGenerator"
+		],
+		"client": [
+			"net.shardor_marn.testorioso.TestoriosoClient"
+		]
+	},
+	"mixins": [
+		"testorioso.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
